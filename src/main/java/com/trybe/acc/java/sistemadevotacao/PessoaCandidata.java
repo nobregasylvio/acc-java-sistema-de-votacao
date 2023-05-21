@@ -5,7 +5,7 @@ public class PessoaCandidata extends Pessoa {
 	private int numberOfVotes;
 
 	public PessoaCandidata(String name, int number) {
-		this.name = name;
+		super.name = name;
 		this.number = number;
 		this.numberOfVotes = 0;
 	}
