@@ -1,21 +1,13 @@
 package com.trybe.acc.java.sistemadevotacao;
 
-public class PessoaCandidata {
-	private String name;
+public class PessoaCandidata extends Pessoa {
 	private int number;
 	private int numberOfVotes;
 
 	public PessoaCandidata(String name, int number) {
 		this.name = name;
 		this.number = number;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getName() {
-		return name;
+		this.numberOfVotes = 0;
 	}
 
 	public int getNumber() {
