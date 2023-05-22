@@ -3,15 +3,22 @@ package com.trybe.acc.java.sistemadevotacao;
 import java.util.ArrayList;
 
 public class GerenciamentoVotacao {
-	private ArrayList<PessoaCandidata> arrayCandidatos;
+	private ArrayList<PessoaCandidata> pessoasCandidatas;
 
 	public GerenciamentoVotacao() {
-		this.arrayCandidatos = new ArrayList<>();
+		this.pessoasCandidatas = new ArrayList<>();
 	}
 
 	public void cadastrarPessoaCandidata(String nome, int numero) {
+		for (PessoaCandidata pessoa : pessoasCandidatas) {
+			if (pessoa.getNome().equals(nome) || pessoa.getNumero() == numero) {
+				System.out.println("Número pessoa candidata já utilizado!");
+				return;
+			}	
+		}
+
 		PessoaCandidata candidato = new PessoaCandidata(nome, numero);
-		arrayCandidatos.add(candidato);
+		pessoasCandidatas.add(candidato);
 	}
 
 	public void cadastrarPessoaEleitora(String nome, String cpf) {
