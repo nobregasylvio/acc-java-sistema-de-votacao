@@ -2,7 +2,14 @@ package com.trybe.acc.java.sistemadevotacao;
 
 import java.util.Scanner;
 
+/**
+ * Classe Principal.
+ */
 public class Principal {
+
+  /**
+   * Método Principal.
+   */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
