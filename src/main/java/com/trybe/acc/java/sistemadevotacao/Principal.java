@@ -7,7 +7,7 @@ public class Principal {
     Boolean isRegisterCandidate = true;
     Boolean isRegisterVoter = true;
     Scanner sc = new Scanner(System.in);
-
+    
     while (isRegisterCandidate) {
       System.out.println("Cadastrar pessoa candidata?\n"
           + "1 - Sim\n"
@@ -18,10 +18,10 @@ public class Principal {
 
       if (option == 1) {
         System.out.println("Entre com o nome da pessoa candidata:");
-        String name = sc.next();
+        String nome = sc.next();
 
         System.out.println("Entre com o número da pessoa candidata:");
-        int number = sc.nextInt();
+        int numero = sc.nextInt();
 
       } else {
         isRegisterCandidate = false;
@@ -38,7 +38,7 @@ public class Principal {
 
       if (option == 1) {
         System.out.println("Entre com o nome da pessoa eleitora:");
-        String name = sc.next();
+        String nome = sc.next();
 
         System.out.println("Entre com o cpf da pessoa eleitora:");
         String cpf = sc.next();

@@ -1,10 +1,14 @@
 package com.trybe.acc.java.sistemadevotacao;
 
 public abstract class Pessoa {
-	protected String name;
+	protected String nome;
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }
