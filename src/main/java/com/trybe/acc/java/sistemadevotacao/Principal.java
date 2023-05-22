@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Principal {
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
     Boolean isRegisterCandidate = true;
     Boolean isRegisterVoter = true;
-    Scanner sc = new Scanner(System.in);
-    
+
+    GerenciamentoVotacao gerenciamento = new GerenciamentoVotacao();
+
     while (isRegisterCandidate) {
       System.out.println("Cadastrar pessoa candidata?\n"
           + "1 - Sim\n"
@@ -22,6 +25,8 @@ public class Principal {
 
         System.out.println("Entre com o número da pessoa candidata:");
         int numero = sc.nextInt();
+
+        gerenciamento.cadastrarPessoaCandidata(nome, numero);
 
       } else {
         isRegisterCandidate = false;
@@ -42,6 +47,9 @@ public class Principal {
 
         System.out.println("Entre com o cpf da pessoa eleitora:");
         String cpf = sc.next();
+
+        gerenciamento.cadastrarPessoaEleitora(nome, cpf);
+
       } else {
         isRegisterVoter = false;
       }
