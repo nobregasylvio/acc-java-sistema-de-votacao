@@ -12,6 +12,9 @@ public class GerenciamentoVotacao {
   private ArrayList<PessoaEleitora> pessoasEleitoras;
   private ArrayList<String> cpfComputado;
 
+  /**
+   * Construtor.
+   */
   public GerenciamentoVotacao() {
     this.pessoasCandidatas = new ArrayList<>();
     this.pessoasEleitoras = new ArrayList<>();
@@ -78,7 +81,7 @@ public class GerenciamentoVotacao {
    */
   public void mostrarResultado() {
     Locale.setDefault(Locale.US);
-    DecimalFormat df = new DecimalFormat("0.00");
+    DecimalFormat df = new DecimalFormat("0.0");
 
     for (PessoaCandidata candidato : pessoasCandidatas) {
       int indiceCandidato = pessoasCandidatas.indexOf(candidato);
