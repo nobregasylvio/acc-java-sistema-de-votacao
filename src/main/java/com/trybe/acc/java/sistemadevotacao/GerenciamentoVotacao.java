@@ -83,6 +83,11 @@ public class GerenciamentoVotacao {
     Locale.setDefault(Locale.US);
     DecimalFormat df = new DecimalFormat("0.0");
 
+    if (cpfComputado.size() == 0) {
+      System.out.println("É preciso ter pelo menos um voto para mostrar o resultado.");
+      return;
+    }
+
     for (PessoaCandidata candidato : pessoasCandidatas) {
       int indiceCandidato = pessoasCandidatas.indexOf(candidato);
       double porcentagem = calcularPorcentagemVotos(indiceCandidato);
