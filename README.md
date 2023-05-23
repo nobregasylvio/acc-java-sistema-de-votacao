@@ -9,7 +9,7 @@ Projeto da Trybe para aceleração em Java, visando aprimorar habilidades em POO
 * [Etapas do projeto](#o-projeto-contém-3-etapas)
 * [Exemplo - Iniciando sistema e cadastrando pessoas candidatas](#iniciando-sistema-e-cadastrando-pessoas-candidatas)
 * [Exemplo - Cadastrando pessoas eleitoras](#cadastrando-pessoas-eleitoras)
-* [Exemplo - Iniciando votação](#iniciando-votação)
+* [Exemplo - Iniciando e finalizando votação](#iniciando-e-finalizando-votação)
 
 ---
 
@@ -105,7 +105,7 @@ Entre com o número correspondente à opção desejada:
 2
 ```
 
-### Iniciando Votação
+### Iniciando e finalizando votação
 
 ```
 ----------- Votação iniciada! -----------
