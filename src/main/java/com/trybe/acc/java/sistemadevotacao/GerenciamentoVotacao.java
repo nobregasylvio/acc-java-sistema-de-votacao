@@ -8,10 +8,12 @@ import java.util.ArrayList;
 public class GerenciamentoVotacao {
   private ArrayList<PessoaCandidata> pessoasCandidatas;
   private ArrayList<PessoaEleitora> pessoasEleitoras;
+  private ArrayList<String> cpfComputado;
 
   public GerenciamentoVotacao() {
     this.pessoasCandidatas = new ArrayList<>();
     this.pessoasEleitoras = new ArrayList<>();
+    this.cpfComputado = new ArrayList<>();
   }
 
   /**
@@ -50,8 +52,23 @@ public class GerenciamentoVotacao {
     pessoasEleitoras.add(candidato);
   }
 
-  public void votar(String cpf, int numero) {
+  /**
+   * Método para verificar se a pessoa eleitora já votou e realizar a votação.
+   */
+  public void votar(String cpfPessoaEleitora, int numeroPessoaCandidata) {
+    for (String cpf : cpfComputado) {
+      if (cpf.equals(cpfPessoaEleitora)) {
+        System.out.println("Pessoa eleitora já votou!");
+        return;
+      }
+    }
 
+    for (PessoaCandidata candidato : pessoasCandidatas) {
+      if (candidato.getNumero() == numeroPessoaCandidata) {
+        candidato.receberVotos();
+        cpfComputado.add(cpfPessoaEleitora);
+      }
+    }
   }
 
   public void mostrarResultado() {

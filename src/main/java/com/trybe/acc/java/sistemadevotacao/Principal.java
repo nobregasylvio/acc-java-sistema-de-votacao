@@ -15,6 +15,7 @@ public class Principal {
 
     Boolean isRegisterCandidate = true;
     Boolean isRegisterVoter = true;
+    Boolean isVoter = true;
 
     GerenciamentoVotacao gerenciamento = new GerenciamentoVotacao();
 
@@ -59,6 +60,31 @@ public class Principal {
 
       } else {
         isRegisterVoter = false;
+      }
+
+    }
+
+    while (isVoter) {
+      System.out.println("     Entre com o número correspondente à opção desejada:\n"
+          + "1 - Votar\n"
+          + "2 - Resultado Parcial\n"
+          + "3 - Finalizar Votação");
+
+      short option = sc.nextShort();
+
+      if (option == 1) {
+        System.out.println("Entre com o cpf da pessoa eleitora:");
+        String cpf = sc.next();
+
+        System.out.println("Entre com o número da pessoa candidata:");
+        int number = sc.nextInt();
+
+        gerenciamento.votar(cpf, number);
+      } else if (option == 2) {
+        gerenciamento.mostrarResultado();
+      } else {
+        gerenciamento.mostrarResultado();
+        isVoter = false;
       }
 
     }

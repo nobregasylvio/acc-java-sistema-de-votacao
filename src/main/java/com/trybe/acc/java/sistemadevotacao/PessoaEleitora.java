@@ -24,4 +24,5 @@ public class PessoaEleitora extends Pessoa {
   public void setCpf(String cpf) {
     this.cpf = cpf;
   }
+
 }
