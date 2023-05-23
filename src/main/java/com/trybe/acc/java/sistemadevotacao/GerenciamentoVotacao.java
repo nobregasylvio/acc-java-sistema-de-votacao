@@ -1,6 +1,8 @@
 package com.trybe.acc.java.sistemadevotacao;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 
 /**
  * Gerenciamento de votação.
@@ -71,7 +73,27 @@ public class GerenciamentoVotacao {
     }
   }
 
+  /**
+   * Mostra o resultado da votacao.
+   */
   public void mostrarResultado() {
+    Locale.setDefault(Locale.US);
+    DecimalFormat df = new DecimalFormat("0.00");
 
+    for (PessoaCandidata candidato : pessoasCandidatas) {
+      int indiceCandidato = pessoasCandidatas.indexOf(candidato);
+      double porcentagem = calcularPorcentagemVotos(indiceCandidato);
+
+      System.out.println(
+          "Nome: " + candidato.getNome() + " - "
+              + candidato.getVotos() + " votos ( " + df.format(porcentagem) + "% )");
+    }
+    System.out.println("Total de votos: " + cpfComputado.size());
+  }
+
+  private double calcularPorcentagemVotos(int index) {
+    PessoaCandidata candidato = pessoasCandidatas.get(index);
+
+    return (double) candidato.getVotos() / cpfComputado.size() * 100;
   }
 }
