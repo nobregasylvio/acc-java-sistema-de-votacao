@@ -20,7 +20,11 @@ public class Principal {
     GerenciamentoVotacao gerenciamento = new GerenciamentoVotacao();
 
     while (isRegisterCandidate) {
-      System.out.println("Cadastrar pessoa candidata?\n"
+      System.out.println("----------- Bem-vindo ao Sistema de Votação -----------\n"
+          + "\n"
+          + "----------- Cadastre as pessoas candidatas ------------"
+          + "\n"
+          + "Cadastrar pessoa candidata?\n"
           + "1 - Sim\n"
           + "2 - Não\n"
           + "Entre com o número correspondente à opção desejada:");
@@ -42,7 +46,9 @@ public class Principal {
     }
 
     while (isRegisterVoter) {
-      System.out.println("Cadastrar pessoa eleitora?\n"
+      System.out.println("----------- Cadastre as pessoas eleitoras -----------"
+          + "\n"
+          + "Cadastrar pessoa eleitora?\n"
           + "1 - Sim\n"
           + "2 - Não\n"
           + "Entre com o número correspondente à opção desejada:");
@@ -65,7 +71,9 @@ public class Principal {
     }
 
     while (isVoter) {
-      System.out.println("     Entre com o número correspondente à opção desejada:\n"
+      System.out.println("----------- Cadastre as pessoas eleitoras -----------\n"
+          + "\n"
+          + "Entre com o número correspondente à opção desejada:\n"
           + "1 - Votar\n"
           + "2 - Resultado Parcial\n"
           + "3 - Finalizar Votação");
