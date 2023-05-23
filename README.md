@@ -1,6 +1,12 @@
 # Bem vindo ao repositório do projeto Sistema de votacao
 Projeto da Trybe para aceleração em Java, visando aprimorar habilidades em POO. Desenvolvimento prático com criação de classes, objetos, herança, encapsulamento e interfaces. Resultado demonstra domínio em Java e compromisso com código limpo e eficiente.
 
+## Resultado da avaliação
+![ResultadoDaAvaliacao](img/resultado-da-avaliacao.png)
+
+## Resultado por requisito
+![ResultadoPorRequisito](img/resultado-por-requisito.png)
+
 ## O projeto contém 3 etapas.
 1. **Cadastrar pessoas candidatas:** nessa etapa, há um menu para o cadastro de pessoas candidatas e, ao fim do cadastro de cada nova pessoa, oferece a opção de cadastrar outra. Quando não houver mais pessoas candidatas para serem cadastradas, então se passa para a etapa de cadastro de pessoas eleitoras;
 
