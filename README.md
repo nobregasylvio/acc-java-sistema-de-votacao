@@ -1,11 +1,27 @@
-# Bem vindo ao repositório do projeto Sistema de votacao
-Projeto da Trybe para aceleração em Java, visando aprimorar habilidades em POO. Desenvolvimento prático com criação de classes, objetos, herança, encapsulamento e interfaces. Resultado demonstra domínio em Java e compromisso com código limpo e eficiente.
+# Bem vindo ao repositório do projeto Sistema de votação
+Projeto da Trybe para aceleração em Java, visando aprimorar habilidades em POO (Programação Orientada a Objetos). Desenvolvimento prático com criação de classes, objetos, herança, encapsulamento e interfaces. Resultado demonstra domínio em Java e compromisso com código limpo e eficiente.
+
+---
+
+## Indíce
+* [Resultado da avaliação](#resultado-da-avaliação)
+* [Resultado por requisito](#resultado-por-requisito)
+* [Etapas do projeto](#o-projeto-contém-3-etapas)
+* [Exemplo - Iniciando sistema e cadastrando pessoas candidatas](#iniciando-sistema-e-cadastrando-pessoas-candidatas)
+* [Exemplo - Cadastrando pessoas eleitoras](#cadastrando-pessoas-eleitoras)
+* [Exemplo - Iniciando votação](#iniciando-votação)
+
+---
 
 ## Resultado da avaliação
 ![ResultadoDaAvaliacao](img/resultado-da-avaliacao.png)
 
+---
+
 ## Resultado por requisito
 ![ResultadoPorRequisito](img/resultado-por-requisito.png)
+
+---
 
 ## O projeto contém 3 etapas.
 1. **Cadastrar pessoas candidatas:** nessa etapa, há um menu para o cadastro de pessoas candidatas e, ao fim do cadastro de cada nova pessoa, oferece a opção de cadastrar outra. Quando não houver mais pessoas candidatas para serem cadastradas, então se passa para a etapa de cadastro de pessoas eleitoras;
@@ -17,8 +33,80 @@ Projeto da Trybe para aceleração em Java, visando aprimorar habilidades em POO
 - A opção `ver resultado parcial` lista todos os nomes das pessoas candidatas, mostrando a quantidade de votos absolutos recebida por cada pessoa candidata e o percentual de votos entre elas. Depois de ver o resultado parcial, o menu volta ao estado inicial desta etapa, oferecendo as opções `votar`, `ver resultado parcial` e `finalizar a votação`.
 - A opção `finalizar a votação` mostra o resultado da votação listando as pessoas candidatas, o número absoluto de votos por pessoa candidata e também o percentual dos votos totais que cada pessoa candidata recebeu. Com o fechamento do processo de votação, o programa é finalizado.
 
+---
 
-### Exemplo:
+## Exemplos:
+### Iniciando Sistema e cadastrando pessoas candidatas
+```
+----------- Bem-vindo ao Sistema de Votação -----------
+
+----------- Cadastre as pessoas candidatas ------------
+
+Cadastrar pessoa candidata?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+1
+Entre com o nome da pessoa candidata:
+Maria
+Entre com o número da pessoa candidata:
+1
+Cadastrar pessoa candidata?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+1
+Entre com o nome da pessoa candidata:
+José
+Entre com o número da pessoa candidata:
+2
+Cadastrar pessoa candidata?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+2
+```
+
+### Cadastrando pessoas eleitoras
+```
+----------- Cadastre as pessoas eleitoras -----------
+
+Cadastrar pessoa eleitora?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+1
+Entre com o nome da pessoa eleitora:
+João
+Entre com o cpf da pessoa eleitora:
+154.118.560-94
+Cadastrar pessoa eleitora?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+1
+Entre com o nome da pessoa eleitora:
+Rute
+Entre com o cpf da pessoa eleitora:
+589.292.640-00
+Cadastrar pessoa eleitora?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+1
+Entre com o nome da pessoa eleitora:
+Raquel
+Entre com o cpf da pessoa eleitora:
+023.476.580-18
+Cadastrar pessoa eleitora?
+1 - Sim
+2 - Não
+Entre com o número correspondente à opção desejada:
+2
+```
+
+### Iniciando Votação
+
 ```
 ----------- Votação iniciada! -----------
 
